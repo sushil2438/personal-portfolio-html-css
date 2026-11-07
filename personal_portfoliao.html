@@ -1,66 +1,204 @@
-
-<!-- Simple Personal page Layout 
- using my concepts that i learned in HTML & CSS-->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Page Layout</title>
+    <meta name="description" content="Sushil Kumar's portfolio — computer science student, aspiring software engineer, and web development enthusiast.">
+    <title>Sushil Kumar | Computer Science Student</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="portfoliao.css">
 </head>
 <body>
-    <header class="sticky-header">
-        <h1 class="profile">SUSHIL KUMAR</h1>
-        <p class="tagline">
-            Diploma in CSE | Aspiring Software Engineer
-        </p>
+    <header class="site-header">
+        <nav class="navigation" aria-label="Main navigation">
+            <a class="brand" href="#home" aria-label="Sushil Kumar, home">SK<span>.</span></a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+            </div>
+            <a class="nav-contact" href="mailto:sushilkuu789@gmail.com">Let's talk <span aria-hidden="true">↗</span></a>
+        </nav>
     </header>
 
-    <section class="profile-section">
-        <div>
-            <img src="professional.jpeg" alt="profile-pic" class="profile-img">
-
-            <div class="bip">
-                <h2>About Me</h2>
-                <p>Diploma Graduate in Computer Science. Basic knowledge of programming and web development.</p>
+    <main>
+        <section class="hero page-width" id="home">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="status-dot"></span> COMPUTER SCIENCE STUDENT · INDIA</p>
+                <h1>Hi, I'm Sushil.<br><span>I build for the web.</span></h1>
+                <p class="hero-description">
+                    A curious computer science student exploring software development,
+                    problem-solving, and the ideas that make technology useful.
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
+                    <a class="text-link" href="mailto:sushilkuu789@gmail.com">Get in touch <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="hero-facts" aria-label="Education highlights">
+                    <div><strong>8.46</strong><span>Diploma SGPA</span></div>
+                    <div><strong>86.2%</strong><span>Class 10 score</span></div>
+                    <div><strong>AI/ML</strong><span>B.Tech focus</span></div>
+                </div>
             </div>
-
-
-        <div class="contact">
-            <p>Email : sushilkuu789@gmail.com</p>
-            <p>Phone : 8235351334</p>
-        </div>
-
-        <section class="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML & CSS (Beginner)</li>
-                <li>Python</li>
-                <li>Java Basics</li>
-                <li>Problem Solving</li>
-                <li>Learning Web Development</li>
-            </ul>
+            <div class="hero-visual">
+                <div class="portrait-frame">
+                    <img src="professional.jpeg" alt="Portrait of Sushil Kumar" class="profile-img">
+                    <div class="portrait-caption"><span class="caption-mark">✳</span> Learning by building</div>
+                </div>
+                <span class="orbit orbit-one" aria-hidden="true"></span>
+                <span class="orbit orbit-two" aria-hidden="true"></span>
+                <div class="floating-note"><span>Currently</span><strong>Studying AI/ML</strong></div>
+            </div>
         </section>
 
-        <section class="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>Village-Level Digital Grievance Portal (HTML, CSS, , flask, SQLite)</li>
-                <!-- attribut : target = "_blank" opens the link in new tab -->
-                <li><a href="https://github.com/sushil2438/Gram-Panchayat-Portal.git" target="_blank">Village-Level Digital Grievance Portal</a></li>
-                <li>Simple Personal Profile Page</li>
-                <li>College Assignments in PHP & Java</li>
-            </ul>
+        <section class="section page-width about-section" id="about">
+            <div class="section-heading">
+                <p class="eyebrow">01 / A LITTLE ABOUT ME</p>
+                <h2>Curiosity is where<br>good work begins.</h2>
+            </div>
+            <div class="about-copy">
+                <p>
+                    I’m pursuing a B.Tech in Computer Science Engineering (AI/ML), building on
+                    a diploma in Computer Science &amp; Engineering. I enjoy learning how
+                    software works from the ground up and turning what I learn into practical projects.
+                </p>
+                <p>
+                    I bring an adaptable mindset, attention to detail, and a steady approach
+                    to solving problems. Right now, I’m growing my skills in programming and
+                    web development one project at a time.
+                </p>
+                <div class="language-line"><span>LANGUAGES</span> Hindi <i>Native</i><b>·</b> English <i>Proficient</i></div>
+            </div>
         </section>
 
+        <section class="section skills-section" id="skills">
+            <div class="page-width">
+                <div class="section-heading section-heading-row">
+                    <div>
+                        <p class="eyebrow">02 / WHAT I'M LEARNING</p>
+                        <h2>Tools &amp; foundations</h2>
+                    </div>
+                    <p class="section-intro">A growing toolkit grounded in my computer science studies.</p>
+                </div>
+                <div class="skill-grid">
+                    <article class="skill-card">
+                        <span class="skill-number">01</span>
+                        <h3>Programming</h3>
+                        <p>C · Python · Java · PHP</p>
+                    </article>
+                    <article class="skill-card">
+                        <span class="skill-number">02</span>
+                        <h3>Web &amp; data</h3>
+                        <p>HTML · CSS · Flask · SQLite · DBMS</p>
+                    </article>
+                    <article class="skill-card">
+                        <span class="skill-number">03</span>
+                        <h3>Computer science</h3>
+                        <p>Networks · Operating systems · Microprocessors</p>
+                    </article>
+                    <article class="skill-card">
+                        <span class="skill-number">04</span>
+                        <h3>How I work</h3>
+                        <p>Problem-solving · Collaboration · Communication</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    </section>
+        <section class="section page-width projects-section" id="projects">
+            <div class="section-heading section-heading-row">
+                <div>
+                    <p class="eyebrow">03 / SELECTED WORK</p>
+                    <h2>Small steps, real solutions.</h2>
+                </div>
+                <p class="section-intro">A project built around making community feedback easier to share.</p>
+            </div>
+            <article class="project-card">
+                <div class="project-preview" aria-hidden="true">
+                    <div class="preview-window">
+                        <div class="preview-top"><span></span><span></span><span></span></div>
+                        <div class="preview-content">
+                            <span class="preview-label">COMMUNITY PORTAL</span>
+                            <div class="preview-title">Your voice,<br>closer to home.</div>
+                            <div class="preview-line"></div>
+                            <div class="preview-button"></div>
+                        </div>
+                    </div>
+                    <span class="preview-spark">✳</span>
+                </div>
+                <div class="project-details">
+                    <p class="project-type">WEB APPLICATION <span>·</span> 01</p>
+                    <h3>Village-Level Digital Grievance Portal</h3>
+                    <p class="project-description">
+                        A digital portal concept for helping village residents submit
+                        grievances and connect with local administration.
+                    </p>
+                    <div class="tag-list" aria-label="Technologies used">
+                        <span>HTML</span><span>CSS</span><span>Flask</span><span>SQLite</span>
+                    </div>
+                    <a class="project-link" href="https://github.com/sushil2438/Gram-Panchayat-Portal" target="_blank" rel="noopener noreferrer">
+                        View project on GitHub <span aria-hidden="true">↗</span>
+                    </a>
+                </div>
+            </article>
+            <p class="project-note">Also explored through college assignments in PHP and Java.</p>
+        </section>
 
+        <section class="section education-section" id="education">
+            <div class="page-width">
+                <div class="section-heading">
+                    <p class="eyebrow">04 / THE LEARNING JOURNEY</p>
+                    <h2>Education</h2>
+                </div>
+                <div class="timeline">
+                    <article class="timeline-item">
+                        <span class="timeline-year">PRESENT</span>
+                        <div>
+                            <h3>B.Tech, Computer Science Engineering (AI/ML)</h3>
+                            <p>Greater Noida Institute of Technology, Gautam Buddha Nagar</p>
+                            <span class="education-status">Currently pursuing</span>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <span class="timeline-year">2023 — 2026</span>
+                        <div>
+                            <h3>Diploma, Computer Science &amp; Engineering</h3>
+                            <p>Government Polytechnic West Champaran · SBTE Bihar</p>
+                            <span class="education-status">Passed · Aggregate SGPA 8.46</span>
+                        </div>
+                    </article>
+                    <article class="timeline-item">
+                        <span class="timeline-year">2023</span>
+                        <div>
+                            <h3>Secondary School Certificate</h3>
+                            <p>Royal Public Sr. Sec. School, Wazirpur · CBSE</p>
+                            <span class="education-status">Passed · 86.2%</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <footer class="footer">
-        <p>&copy; 2026 Sushil Kumar. All Rights are reserved</p>
+        <section class="contact-section page-width" id="contact">
+            <div>
+                <p class="eyebrow">HAVE A PROJECT IN MIND?</p>
+                <h2>Let’s make something<br>useful together.</h2>
+            </div>
+            <div class="contact-details">
+                <a class="contact-email" href="mailto:sushilkuu789@gmail.com">sushilkuu789@gmail.com <span aria-hidden="true">↗</span></a>
+                <a href="tel:+918235351334">+91 82353 51334</a>
+                <a href="https://github.com/sushil2438" target="_blank" rel="noopener noreferrer">GitHub profile <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer page-width">
+        <a class="brand" href="#home">SK<span>.</span></a>
+        <p>Designed and built by Sushil Kumar · © 2026</p>
+        <a href="#home">Back to top ↑</a>
     </footer>
 </body>
 </html>
